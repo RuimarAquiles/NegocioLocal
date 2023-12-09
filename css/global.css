@@ -1,0 +1,193 @@
+/* body, table, h1 = referencia elementos*/
+/* " . " = referencia classes*/
+/* " # " = referencia id*/
+html{
+    scroll-behavior: smooth;/*cria uma rolagem suave dentro para hyperlink
+    dentro da página*/
+}
+body{/*Global*/
+    background-image: url(/imagens/barbearia.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+    margin: 0;
+    /*radial-gradient(rgb(44, 30, 30),rgb(255, 255, 255),rgb(44, 30, 30) )*/
+}
+.setacima{
+    display: flex;
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+}
+/*=======================INÍCIO HEADER========================*/
+header{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    height: 200px;
+    /*background: linear-gradient(rgb(44, 30, 30),rgb(255, 255, 255),rgb(44, 30, 30) );*/
+}
+.divfoto{/**/
+    text-align: right;
+}
+.imglogo{ /*logo*/
+    padding-left: 20px;
+    padding-top: 10px;
+    width:25%;
+}
+.nomenegocio{
+    color: rgb(223, 202, 186);
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: xxx-large;
+}
+.bemvindo{
+    color: rgb(223, 202, 186);
+}
+.destaque{
+    font-size: 1.3em; /* em = deixa a fonte % maior que a fonte pai
+    rem = deixa a fonte % menor que a fonte pai*/
+}
+/*=======================FIM HEADER========================*/
+/*=======================INÍCIO MENU========================*/
+.menu{
+    display: flex;
+    height: 45px;
+    align-items: center;
+    justify-content: space-evenly;
+    background: linear-gradient(black,rgba(34, 34, 34, 0.705),black );
+}
+.menu ul{
+    list-style: none; 
+    display: contents; /**/
+}
+/*.menu li{
+    
+}*/
+/*=======================FIM MENU========================*/
+/*=======================INÍCIO CONTAINER========================*/
+.container{
+    background: rgba(88, 85, 85, 0.699);
+    display: flex;
+    margin: 0;
+}
+    /*FORMATAÇÕES DE LINKS*/
+    .links{/*Formatação de links em geral*/
+        color: rgb(223, 202, 186);
+        text-decoration: none;
+    }
+    a:visited,a{/*ação para links visitados*/
+        color: rgb(223, 202, 186);
+    }
+    a:hover{/**/
+        color: white;    
+    }
+    /*=======INICIO ASIDE=======*/
+.aside{/*padding-bottom: 400px;*/
+    position: absolute;
+    right: 1%;
+    width: 15%;
+    padding-top: 6.5%;
+    padding-right: 5%;
+    border: 0;
+}
+.horarios{
+    color: white;
+    text-align: justify;
+}
+.lbhorarios{
+    color: rgb(223, 202, 186);
+    text-align: center;
+}
+
+    /*=======FIM ASIDE======*/
+/*============INÍCIO MAIN=========*/
+.main{
+    padding-top: 2%;
+    width: 80%;
+    padding-left: 2%;
+}
+.subtitulo{
+    color:white;
+    text-align: left;
+    padding-left: 50px;
+}
+    /*=====SERVIÇOS MAIS AGENDADOS=====*/
+.paternAgendados{
+    display: flex;
+    justify-content: space-evenly;
+}
+.agendados{
+    align-items: center;
+    font-family: Verdana;
+    display: flex;
+    border-radius: 15px;
+    padding: 15px;
+    height: 60px;
+    background: linear-gradient(black,rgb(255, 255, 255),black );
+    /*border-color: ;*/
+}
+.agendados:hover{
+    background: linear-gradient(to bottom,rgb(255, 255, 255),rgb(112, 112, 112) );
+}
+/*=====SERVIÇOS MAIS AGENDADOS=====*/
+/*====FIM MAIN====*/
+/*===INÍCIO FOOTER*/
+footer{
+    display: flow-root;
+    background-color: white;
+}
+/*===FIM FOOTER*/
+
+/*.quadroFormContato , tr{Background geral das tabelas*/
+    /*background: linear-gradient(black,rgb(255, 255, 255),black );
+}*/
+
+.nossaequipe{
+    display: flex;
+    padding-right: 20px;
+    padding-left: 30px;
+}
+.fotobabeiros{
+    padding-right: 50px;
+    width: 150px;
+}
+.formaspg{
+    padding-right: 50px;
+    width: 80px;
+}
+.iconcontatos{
+
+    padding-right: 50px;
+    width:70px;
+    transition: transform 0.5s ease-in-out;
+}
+.iconcontatos:hover{
+	transform:scale(1.25);
+}
+@keyframes iconcontatos{
+	0% {
+		transform:scale(1);
+	}
+	100%{
+		transform:scale(1.25);
+	}
+}
+
+.enviar,.textborder{/*botão enviar na pagina contato*/
+    padding-left: 35px;
+    padding-right: 35px;
+    font-family: Tahoma;
+}
+.enviar,.inputContato{/*botão enviar e input na pagina contato*/
+    border-radius: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-color: darkblue;
+}

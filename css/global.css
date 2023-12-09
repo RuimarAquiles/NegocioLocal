@@ -6,7 +6,7 @@ html{
     dentro da página*/
 }
 body{/*Global*/
-    background-image: url(/imagens/barbearia.jpg);
+    background-image: url(../imagens/barbearia.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
